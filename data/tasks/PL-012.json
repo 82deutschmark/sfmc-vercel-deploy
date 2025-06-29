@@ -1,0 +1,247 @@
+{
+  "id": "PL-012",
+  "title": "Easy Primary Diagonal Reflection Task",
+  "description": "Reflect the grid across the primary diagonal (top-left to bottom-right) using only numbers 0-2.",
+  "category": "🚀 Pre-Launch Ops",
+  "difficulty": "Basic",
+  "gridSize": 5,
+  "timeLimit": null,
+  "basePoints": 75,
+  "requiredRankLevel": 1,
+  "emojiSet": "celestial_set1",
+  "examples": [
+    {
+      "input": [
+        [
+          0,
+          0,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "output": [
+        [
+          0,
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "input": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          1
+        ]
+      ],
+      "output": [
+        [
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          2,
+          1
+        ]
+      ]
+    }
+  ],
+  "testInput": [
+    [
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      2,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      2,
+      2,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      2,
+      2,
+      2
+    ]
+  ],
+  "testOutput": [
+    [
+      0,
+      2,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      2,
+      1,
+      2
+    ],
+    [
+      2,
+      0,
+      0,
+      1,
+      2
+    ]
+  ],
+  "hints": [
+    "Imagine a line going from the top-left corner to the bottom-right corner of the grid ↘️. Flip the grid over this line.",
+    "The top-right corner will swap with the bottom-left corner, like looking in a mirror diagonally.",
+    "Think about swapping rows and columns - the first row becomes the first column, the second row becomes the second column, and so on."
+  ],
+  "transformationType": "primary_diagonal_reflection",
+  "generated": true
+}

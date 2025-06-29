@@ -48,9 +48,9 @@
   "hints": [
     "When you turn a picture sideways, you just know what it looks like. But computers have to figure out where every single dot should move when you spin something. It's like doing a puzzle where every piece changes places.",
     "Think about when you turn your head to look at something sideways. You don't have to think about it - you just do it. But a computer is like someone who has to carefully move every toy in your room to new spots just to see what it looks like from a different angle.",
-    "It's like playing with a kaleidoscope. When you turn it, all the pretty colors move to new places, but you can still see it's the same pattern. A computer would have to track where each tiny piece of color went and calculate its new home.",
+    "It's like playing with a kaleidoscope. When you turn it, all the pieces move to new places, but you can still see it's the same pattern. A computer would have to track where each tiny piece of color went and calculate its new home.",
     "Turn the entire grid 90 degrees clockwise (¼ turn to the right).",
     "The top row becomes the rightmost column, read top to bottom.",
-    "Apply this rotation to the entire grid, including the black cells."
+    "Apply this rotation to the entire grid, including the ⬛ cells."
   ]
 }

@@ -180,7 +180,7 @@ const numberRanges = [
 async function generateAllEasyTasks() {
   console.log('Generating easy diagonal reflection tasks...');
   
-  // For each category, generate two tasks
+  // For each category, generate tasks
   for (const category of categories) {
     console.log(`\nProcessing category: ${category.code} (${category.fullName})`);
     
@@ -207,6 +207,18 @@ async function generateAllEasyTasks() {
       secondaryTaskId
     );
     saveTask(secondaryTask, secondaryTaskId);
+    
+    // Generate third task with numbers 0-2 on a 5x5 grid
+    const thirdTaskId = `${category.code}-012`;
+    const thirdTask = createTaskDefinition(
+      category,
+      'primary_diagonal_reflection', // Using primary diagonal for this set
+      5, // Using 5x5 grid as specified
+      0, // min value
+      2, // max value - only digits 0-2
+      thirdTaskId
+    );
+    saveTask(thirdTask, thirdTaskId);
   }
   
   console.log('\nAll easy diagonal reflection tasks generated successfully!');
