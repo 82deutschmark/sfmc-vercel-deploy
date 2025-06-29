@@ -80,18 +80,20 @@ function createTaskDefinition(category, transformationType, gridSize, input, out
     requiredRankLevel: 1,
     emojiSet: category.emojiSet,
     examples: [
-      {
-        input: createRandomGrid(gridSize),
-        output: transformationType === 'primary_diagonal_reflection' ?
-          applyPrimaryDiagonalReflection(createRandomGrid(gridSize)) :
-          applySecondaryDiagonalReflection(createRandomGrid(gridSize))
-      },
-      {
-        input: createRandomGrid(gridSize),
-        output: transformationType === 'primary_diagonal_reflection' ?
-          applyPrimaryDiagonalReflection(createRandomGrid(gridSize)) :
-          applySecondaryDiagonalReflection(createRandomGrid(gridSize))
-      }
+      (() => {
+        const exInput1 = createRandomGrid(gridSize);
+        const exOutput1 = transformationType === 'primary_diagonal_reflection' ?
+          applyPrimaryDiagonalReflection(exInput1) :
+          applySecondaryDiagonalReflection(exInput1);
+        return { input: exInput1, output: exOutput1 };
+      })(),
+      (() => {
+        const exInput2 = createRandomGrid(gridSize);
+        const exOutput2 = transformationType === 'primary_diagonal_reflection' ?
+          applyPrimaryDiagonalReflection(exInput2) :
+          applySecondaryDiagonalReflection(exInput2);
+        return { input: exInput2, output: exOutput2 };
+      })()
     ],
     testInput: input,
     testOutput: output,
