@@ -1,0 +1,127 @@
+{
+  "id": "OS-011",
+  "title": "Easy Secondary Diagonal Reflection Task",
+  "description": "Reflect the grid across the secondary diagonal (top-right to bottom-left) using only numbers 5-9.",
+  "category": "🛡️ O₂ Sensor Check",
+  "difficulty": "Basic",
+  "gridSize": 3,
+  "timeLimit": null,
+  "basePoints": 75,
+  "requiredRankLevel": 1,
+  "emojiSet": "tech_set2",
+  "examples": [
+    {
+      "input": [
+        [
+          7,
+          9,
+          5
+        ],
+        [
+          5,
+          6,
+          9
+        ],
+        [
+          5,
+          6,
+          5
+        ]
+      ],
+      "output": [
+        [
+          5,
+          9,
+          5
+        ],
+        [
+          6,
+          6,
+          9
+        ],
+        [
+          5,
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "input": [
+        [
+          9,
+          8,
+          9
+        ],
+        [
+          8,
+          7,
+          8
+        ],
+        [
+          5,
+          7,
+          9
+        ]
+      ],
+      "output": [
+        [
+          9,
+          8,
+          9
+        ],
+        [
+          7,
+          7,
+          8
+        ],
+        [
+          5,
+          8,
+          9
+        ]
+      ]
+    }
+  ],
+  "testInput": [
+    [
+      7,
+      7,
+      9
+    ],
+    [
+      9,
+      5,
+      6
+    ],
+    [
+      6,
+      6,
+      7
+    ]
+  ],
+  "testOutput": [
+    [
+      7,
+      6,
+      9
+    ],
+    [
+      6,
+      5,
+      7
+    ],
+    [
+      6,
+      9,
+      7
+    ]
+  ],
+  "hints": [
+    "Imagine a line going from the top-right corner to the bottom-left corner of the grid ↙️. Flip the grid over this line.",
+    "The top-left corner will swap with the bottom-right corner, like a different kind of mirror.",
+    "Think of this as \"flipping the grid upside down\" and then \"flipping it left to right\" all at once."
+  ],
+  "transformationType": "secondary_diagonal_reflection",
+  "generated": true
+}

@@ -1,84 +1,84 @@
 {
-  "id": "NAV-010",
+  "id": "OS-010",
   "title": "Easy Primary Diagonal Reflection Task",
   "description": "Reflect the grid across the primary diagonal (top-left to bottom-right) using only numbers 0-4.",
-  "category": "🧭 Navigation",
+  "category": "🛡️ O₂ Sensor Check",
   "difficulty": "Basic",
   "gridSize": 3,
   "timeLimit": null,
   "basePoints": 75,
   "requiredRankLevel": 1,
-  "emojiSet": "weather_climate",
+  "emojiSet": "tech_set2",
   "examples": [
     {
       "input": [
+        [
+          4,
+          3,
+          1
+        ],
         [
           3,
           3,
           0
         ],
         [
+          4,
           2,
-          2,
-          2
-        ],
-        [
-          1,
-          2,
-          1
+          3
         ]
       ],
       "output": [
         [
+          4,
           3,
-          2,
-          1
+          4
         ],
         [
           3,
-          2,
+          3,
           2
         ],
         [
+          1,
           0,
-          2,
-          1
+          3
         ]
       ]
     },
     {
       "input": [
         [
-          3,
-          3,
-          4
-        ],
-        [
           4,
           2,
           2
         ],
         [
-          2,
-          2,
-          3
+          3,
+          1,
+          2
+        ],
+        [
+          4,
+          4,
+          1
         ]
       ],
       "output": [
         [
-          3,
           4,
-          2
+          3,
+          4
         ],
         [
-          3,
           2,
-          2
+          1,
+          4
         ],
         [
-          4,
           2,
-          3
+          2,
+          1
         ]
       ]
     }
@@ -86,34 +86,34 @@
   "testInput": [
     [
       3,
-      3,
-      3
-    ],
-    [
-      2,
-      2,
-      2
-    ],
-    [
-      3,
       0,
+      0
+    ],
+    [
+      1,
+      3,
+      1
+    ],
+    [
+      3,
+      2,
       3
     ]
   ],
   "testOutput": [
     [
       3,
-      2,
+      1,
       3
     ],
     [
+      0,
       3,
-      2,
-      0
+      2
     ],
     [
-      3,
-      2,
+      0,
+      1,
       3
     ]
   ],

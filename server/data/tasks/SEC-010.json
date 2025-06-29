@@ -1,8 +1,8 @@
 {
-  "id": "NAV-010",
+  "id": "SEC-010",
   "title": "Easy Primary Diagonal Reflection Task",
   "description": "Reflect the grid across the primary diagonal (top-left to bottom-right) using only numbers 0-4.",
-  "category": "🧭 Navigation",
+  "category": "🔒 Security",
   "difficulty": "Basic",
   "gridSize": 3,
   "timeLimit": null,
@@ -13,108 +13,108 @@
     {
       "input": [
         [
-          3,
-          3,
+          4,
+          0,
           0
+        ],
+        [
+          3,
+          0,
+          3
         ],
         [
           2,
           2,
           2
-        ],
-        [
-          1,
-          2,
-          1
         ]
       ],
       "output": [
         [
+          4,
           3,
-          2,
-          1
-        ],
-        [
-          3,
-          2,
           2
         ],
         [
           0,
-          2,
-          1
+          0,
+          2
+        ],
+        [
+          0,
+          3,
+          2
         ]
       ]
     },
     {
       "input": [
         [
-          3,
-          3,
-          4
+          1,
+          4,
+          0
         ],
         [
           4,
-          2,
-          2
+          1,
+          3
         ],
         [
-          2,
-          2,
-          3
+          4,
+          4,
+          2
         ]
       ],
       "output": [
         [
-          3,
+          1,
           4,
-          2
-        ],
-        [
-          3,
-          2,
-          2
+          4
         ],
         [
           4,
-          2,
-          3
+          1,
+          4
+        ],
+        [
+          0,
+          3,
+          2
         ]
       ]
     }
   ],
   "testInput": [
     [
-      3,
-      3,
-      3
+      4,
+      4,
+      4
     ],
     [
+      1,
       2,
-      2,
-      2
+      4
     ],
     [
-      3,
-      0,
-      3
+      1,
+      4,
+      1
     ]
   ],
   "testOutput": [
     [
-      3,
-      2,
-      3
+      4,
+      1,
+      1
     ],
     [
-      3,
+      4,
       2,
-      0
+      4
     ],
     [
-      3,
-      2,
-      3
+      4,
+      4,
+      1
     ]
   ],
   "hints": [

@@ -1,54 +1,82 @@
 {
   "id": "FS-010",
-  "title": "Fuel System Element Sorting",
-  "description": "Fuel distribution requires element sorting protocols. Non-empty elements gather at specific grid positions.",
+  "title": "Easy Primary Diagonal Reflection Task",
+  "description": "Reflect the grid across the primary diagonal (top-left to bottom-right) using only numbers 0-4.",
   "category": "⚡ Fuel Systems",
   "difficulty": "Basic",
-  "gridSize": 2,
+  "gridSize": 3,
   "timeLimit": null,
-  "basePoints": 3625,
+  "basePoints": 75,
   "requiredRankLevel": 1,
   "emojiSet": "tech_set1",
   "examples": [
     {
       "input": [
         [
-          8,
-          0
+          1,
+          1,
+          3
         ],
         [
           0,
-          1
+          4,
+          2
+        ],
+        [
+          4,
+          2,
+          4
         ]
       ],
       "output": [
         [
-          8,
-          1
+          1,
+          0,
+          4
         ],
         [
-          0,
-          0
+          1,
+          4,
+          2
+        ],
+        [
+          3,
+          2,
+          4
         ]
       ]
     },
     {
       "input": [
         [
-          0,
-          1
+          2,
+          4,
+          4
         ],
         [
-          2,
+          4,
+          3,
+          0
+        ],
+        [
+          3,
+          4,
           0
         ]
       ],
       "output": [
         [
           2,
-          1
+          4,
+          3
         ],
         [
+          4,
+          3,
+          4
+        ],
+        [
+          4,
           0,
           0
         ]
@@ -57,27 +85,43 @@
   ],
   "testInput": [
     [
-      5,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      4,
       0
     ],
     [
-      0,
-      3
+      2,
+      1,
+      2
     ]
   ],
   "testOutput": [
     [
-      5,
-      3
+      1,
+      2,
+      2
     ],
     [
+      1,
+      4,
+      1
+    ],
+    [
+      1,
       0,
-      0
+      2
     ]
   ],
   "hints": [
-    "Collect all non-⬛ elements to the top row.",
-    "⬛ spaces fill the bottom row completely.",
-    "Maintain left-to-right order of collected elements."
-  ]
+    "Imagine a line going from the top-left corner to the bottom-right corner of the grid ↘️. Flip the grid over this line.",
+    "The top-right corner will swap with the bottom-left corner, like looking in a mirror diagonally.",
+    "Think about swapping rows and columns - the first row becomes the first column, the second row becomes the second column, and so on."
+  ],
+  "transformationType": "primary_diagonal_reflection",
+  "generated": true
 }
