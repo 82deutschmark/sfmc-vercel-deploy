@@ -162,10 +162,10 @@ const categories = [
   { code: 'OS', fullName: '🛡️ O₂ Sensor Check', emojiSet: 'tech_set2' },
   { code: 'PL', fullName: '🚀 Pre-Launch Ops', emojiSet: 'celestial_set1' },
   { code: 'FS', fullName: '⚡ Fuel Systems', emojiSet: 'tech_set1' },
-  { code: 'NAV', fullName: '🧭 Navigation', emojiSet: 'weather_climate' },
-  { code: 'COM', fullName: '📡 Communications', emojiSet: 'tech_set2' },
-  { code: 'PWR', fullName: '⚡ Power Systems', emojiSet: 'tech_set1' },
-  { code: 'SEC', fullName: '🔒 Security', emojiSet: 'weather_climate' }
+  { code: 'NAV', fullName: '🧭 Navigation', emojiSet: 'celestial_set2' },
+  { code: 'COM', fullName: '📡 Communications', emojiSet: 'tech_set1' },
+  { code: 'PWR', fullName: '⚡ Power Systems', emojiSet: 'tech_set2' },
+  { code: 'SEC', fullName: '🔒 Security', emojiSet: 'status_alerts' }
 ];
 
 // Define the number ranges to use

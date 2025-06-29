@@ -1,0 +1,287 @@
+{
+  "id": "OS-014",
+  "title": "Primary Diagonal Reflection - Dense Pattern",
+  "description": "Reflect the grid across the primary diagonal (top-left to bottom-right) with high-density non-zero values.",
+  "category": "🛡️ O₂ Sensor Check",
+  "emojiSet": "celestial_set2",
+  "difficulty": "Intermediate",
+  "gridSize": 4,
+  "timeLimit": null,
+  "basePoints": 100000,
+  "requiredRankLevel": 1,
+  "input": [
+    [
+      2,
+      4,
+      4,
+      2
+    ],
+    [
+      2,
+      3,
+      6,
+      6
+    ],
+    [
+      4,
+      3,
+      1,
+      3
+    ],
+    [
+      6,
+      1,
+      5,
+      6
+    ]
+  ],
+  "expectedOutput": [
+    [
+      2,
+      2,
+      4,
+      6
+    ],
+    [
+      4,
+      3,
+      3,
+      1
+    ],
+    [
+      4,
+      6,
+      1,
+      5
+    ],
+    [
+      2,
+      6,
+      3,
+      6
+    ]
+  ],
+  "testInput": [
+    [
+      1,
+      3,
+      7,
+      3
+    ],
+    [
+      3,
+      5,
+      2,
+      6
+    ],
+    [
+      5,
+      5,
+      3,
+      1
+    ],
+    [
+      5,
+      5,
+      2,
+      3
+    ]
+  ],
+  "testOutput": [
+    [
+      1,
+      3,
+      5,
+      5
+    ],
+    [
+      3,
+      5,
+      5,
+      5
+    ],
+    [
+      7,
+      2,
+      3,
+      2
+    ],
+    [
+      3,
+      6,
+      1,
+      3
+    ]
+  ],
+  "examples": [
+    {
+      "input": [
+        [
+          7,
+          1,
+          3,
+          1
+        ],
+        [
+          6,
+          1,
+          3,
+          3
+        ],
+        [
+          5,
+          4,
+          1,
+          1
+        ],
+        [
+          3,
+          2,
+          5,
+          6
+        ]
+      ],
+      "output": [
+        [
+          7,
+          6,
+          5,
+          3
+        ],
+        [
+          1,
+          1,
+          4,
+          2
+        ],
+        [
+          3,
+          3,
+          1,
+          5
+        ],
+        [
+          1,
+          3,
+          1,
+          6
+        ]
+      ]
+    },
+    {
+      "input": [
+        [
+          5,
+          3,
+          5,
+          2
+        ],
+        [
+          5,
+          5,
+          6,
+          5
+        ],
+        [
+          3,
+          6,
+          2,
+          4
+        ],
+        [
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "output": [
+        [
+          5,
+          5,
+          3,
+          4
+        ],
+        [
+          3,
+          5,
+          6,
+          4
+        ],
+        [
+          5,
+          6,
+          2,
+          4
+        ],
+        [
+          2,
+          5,
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "input": [
+        [
+          2,
+          7,
+          5,
+          3
+        ],
+        [
+          2,
+          3,
+          6,
+          2
+        ],
+        [
+          1,
+          3,
+          4,
+          3
+        ],
+        [
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "output": [
+        [
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          7,
+          3,
+          3,
+          2
+        ],
+        [
+          5,
+          6,
+          4,
+          2
+        ],
+        [
+          3,
+          2,
+          3,
+          2
+        ]
+      ]
+    }
+  ],
+  "hints": [
+    "Imagine a line going from the top-left corner to the bottom-right corner of the grid ↘️. Flip the grid over this line.",
+    "The top-right corner will swap with the bottom-left corner, like looking in a mirror diagonally.",
+    "Notice how every number in row 1 moves to column 1, numbers in row 2 move to column 2, and so on."
+  ],
+  "transformationType": "primary_diagonal_reflection",
+  "generated": true
+}

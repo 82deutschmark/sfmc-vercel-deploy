@@ -1,0 +1,287 @@
+{
+  "id": "FS-014",
+  "title": "Primary Diagonal Reflection - Dense Pattern",
+  "description": "Reflect the grid across the primary diagonal (top-left to bottom-right) with high-density non-zero values.",
+  "category": "⚡ Fuel Systems",
+  "emojiSet": "tech_set1",
+  "difficulty": "Intermediate",
+  "gridSize": 4,
+  "timeLimit": null,
+  "basePoints": 100000,
+  "requiredRankLevel": 1,
+  "input": [
+    [
+      2,
+      5,
+      1,
+      4
+    ],
+    [
+      4,
+      4,
+      5,
+      5
+    ],
+    [
+      5,
+      7,
+      1,
+      3
+    ],
+    [
+      4,
+      4,
+      3,
+      5
+    ]
+  ],
+  "expectedOutput": [
+    [
+      2,
+      4,
+      5,
+      4
+    ],
+    [
+      5,
+      4,
+      7,
+      4
+    ],
+    [
+      1,
+      5,
+      1,
+      3
+    ],
+    [
+      4,
+      5,
+      3,
+      5
+    ]
+  ],
+  "testInput": [
+    [
+      6,
+      2,
+      3,
+      1
+    ],
+    [
+      1,
+      5,
+      1,
+      3
+    ],
+    [
+      6,
+      5,
+      2,
+      7
+    ],
+    [
+      3,
+      1,
+      1,
+      7
+    ]
+  ],
+  "testOutput": [
+    [
+      6,
+      1,
+      6,
+      3
+    ],
+    [
+      2,
+      5,
+      5,
+      1
+    ],
+    [
+      3,
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      3,
+      7,
+      7
+    ]
+  ],
+  "examples": [
+    {
+      "input": [
+        [
+          2,
+          2,
+          7,
+          1
+        ],
+        [
+          2,
+          6,
+          6,
+          1
+        ],
+        [
+          6,
+          1,
+          7,
+          1
+        ],
+        [
+          4,
+          1,
+          1,
+          7
+        ]
+      ],
+      "output": [
+        [
+          2,
+          2,
+          6,
+          4
+        ],
+        [
+          2,
+          6,
+          1,
+          1
+        ],
+        [
+          7,
+          6,
+          7,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          7
+        ]
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          5,
+          1,
+          7
+        ],
+        [
+          5,
+          7,
+          2,
+          4
+        ],
+        [
+          2,
+          7,
+          6,
+          3
+        ],
+        [
+          5,
+          6,
+          2,
+          1
+        ]
+      ],
+      "output": [
+        [
+          1,
+          5,
+          2,
+          5
+        ],
+        [
+          5,
+          7,
+          7,
+          6
+        ],
+        [
+          1,
+          2,
+          6,
+          2
+        ],
+        [
+          7,
+          4,
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "input": [
+        [
+          3,
+          6,
+          7,
+          1
+        ],
+        [
+          2,
+          6,
+          7,
+          1
+        ],
+        [
+          1,
+          4,
+          7,
+          1
+        ],
+        [
+          6,
+          2,
+          4,
+          6
+        ]
+      ],
+      "output": [
+        [
+          3,
+          2,
+          1,
+          6
+        ],
+        [
+          6,
+          6,
+          4,
+          2
+        ],
+        [
+          7,
+          7,
+          7,
+          4
+        ],
+        [
+          1,
+          1,
+          1,
+          6
+        ]
+      ]
+    }
+  ],
+  "hints": [
+    "Imagine a line going from the top-left corner to the bottom-right corner of the grid ↘️. Flip the grid over this line.",
+    "The top-right corner will swap with the bottom-left corner, like looking in a mirror diagonally.",
+    "Notice how every number in row 1 moves to column 1, numbers in row 2 move to column 2, and so on."
+  ],
+  "transformationType": "primary_diagonal_reflection",
+  "generated": true
+}
