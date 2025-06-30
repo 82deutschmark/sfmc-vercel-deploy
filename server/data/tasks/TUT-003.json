@@ -1,0 +1,53 @@
+{
+  "id": "TUT-003",
+  "title": "Mirror Magic - Horizontal Reflection",
+  "description": "Here's where humans shine and computers struggle! When you look in a mirror, you instantly understand that your left hand appears on the right side. This is called horizontal reflection or 'flipping left-to-right.' Computers find this incredibly difficult because they have to calculate where every single square should move, while you can see the pattern immediately. This is exactly the kind of spatial reasoning that makes human intelligence special.",
+  "category": "🎓 Tutorial",
+  "difficulty": "Tutorial",
+  "gridSize": 3,
+  "timeLimit": null,
+  "basePoints": 200,
+  "requiredRankLevel": 1,
+  "emojiSet": "status_alerts",
+  "examples": [
+    {
+      "input": [
+        [1, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]
+      ],
+      "output": [
+        [0, 0, 1],
+        [0, 0, 0],
+        [0, 0, 0]
+      ]
+    },
+    {
+      "input": [
+        [0, 0, 2],
+        [0, 1, 0],
+        [3, 0, 0]
+      ],
+      "output": [
+        [2, 0, 0],
+        [0, 1, 0],
+        [0, 0, 3]
+      ]
+    }
+  ],
+  "testInput": [
+    [1, 0, 2],
+    [0, 0, 0],
+    [0, 3, 0]
+  ],
+  "testOutput": [
+    [2, 0, 1],
+    [0, 0, 0],
+    [0, 3, 0]
+  ],
+  "hints": [
+    "Think about looking in a bathroom mirror. If you hold up your left hand, it appears on the right side of your reflection. That's exactly what we're doing with these grids!",
+    "Look at the first example: the checkmark ✅ starts in the top-left corner and moves to the top-right corner. The middle column stays the same because it's like the mirror itself.",
+    "For a 3x3 grid: the left column becomes the right column, the right column becomes the left column, and the middle column stays put. Try this with the test grid!"
+  ]
+}

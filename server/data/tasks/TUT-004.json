@@ -1,0 +1,53 @@
+{
+  "id": "TUT-004",
+  "title": "Vertical Reflection - Up and Down",
+  "description": "Now let's try flipping up and down! This is called vertical reflection. Imagine you're looking at your reflection in a still lake - everything flips top to bottom. What's at the top appears at the bottom, and what's at the bottom appears at the top. Computers struggle with this spatial transformation just like they do with horizontal reflection, because they can't 'see' the whole pattern at once like humans can.",
+  "category": "🎓 Tutorial",
+  "difficulty": "Tutorial",
+  "gridSize": 3,
+  "timeLimit": null,
+  "basePoints": 250,
+  "requiredRankLevel": 1,
+  "emojiSet": "status_alerts",
+  "examples": [
+    {
+      "input": [
+        [1, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]
+      ],
+      "output": [
+        [0, 0, 0],
+        [0, 0, 0],
+        [1, 0, 0]
+      ]
+    },
+    {
+      "input": [
+        [1, 0, 2],
+        [0, 3, 0],
+        [4, 0, 0]
+      ],
+      "output": [
+        [4, 0, 0],
+        [0, 3, 0],
+        [1, 0, 2]
+      ]
+    }
+  ],
+  "testInput": [
+    [0, 1, 0],
+    [0, 0, 0],
+    [2, 0, 3]
+  ],
+  "testOutput": [
+    [2, 0, 3],
+    [0, 0, 0],
+    [0, 1, 0]
+  ],
+  "hints": [
+    "Think of looking at your reflection in a calm lake. If you wave your hand above your head, in the reflection it appears below your reflection's head. That's vertical flipping!",
+    "Look at the examples: in the first one, the checkmark ✅ moves from the top row to the bottom row in the same column. The middle row stays the same because it's like the 'water line' in our lake reflection.",
+    "For vertical reflection: the top row becomes the bottom row, the bottom row becomes the top row, and the middle row stays in place."
+  ]
+}

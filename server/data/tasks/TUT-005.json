@@ -1,0 +1,53 @@
+{
+  "id": "TUT-005",
+  "title": "Pattern Completion - Filling the Gaps",
+  "description": "This is where human pattern recognition really shines! You can look at a partially filled grid and instantly see what's missing. Computers struggle because they don't understand the 'big picture' - they analyze each square separately instead of seeing the overall pattern. This ability to recognize and complete patterns is a fundamental part of human intelligence that's incredibly difficult for AI to replicate.",
+  "category": "🎓 Tutorial",
+  "difficulty": "Tutorial",
+  "gridSize": 3,
+  "timeLimit": null,
+  "basePoints": 300,
+  "requiredRankLevel": 1,
+  "emojiSet": "status_alerts",
+  "examples": [
+    {
+      "input": [
+        [1, 0, 1],
+        [0, 0, 0],
+        [1, 0, 1]
+      ],
+      "output": [
+        [1, 0, 1],
+        [0, 1, 0],
+        [1, 0, 1]
+      ]
+    },
+    {
+      "input": [
+        [1, 2, 0],
+        [2, 0, 0],
+        [0, 0, 0]
+      ],
+      "output": [
+        [1, 2, 1],
+        [2, 1, 2],
+        [1, 2, 1]
+      ]
+    }
+  ],
+  "testInput": [
+    [0, 1, 0],
+    [1, 0, 0],
+    [0, 0, 0]
+  ],
+  "testOutput": [
+    [0, 1, 0],
+    [1, 0, 1],
+    [0, 1, 0]
+  ],
+  "hints": [
+    "Look for the pattern that's trying to emerge! In the first example, you can see checkmarks ✅ in the corners. The pattern wants to be symmetrical, so it needs a checkmark in the center too.",
+    "Humans are amazing at seeing patterns that aren't complete yet. You can look at just a few pieces and imagine what the whole picture should look like. Computers can't do this naturally.",
+    "In the test grid, look at where the checkmarks ✅ are placed. Can you see the cross or plus-sign pattern that wants to form? Fill in the missing pieces to complete it!"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "TUT-002",
+  "title": "Your First Change",
+  "description": "Now let's make your first change to a grid! This is the foundation of all puzzle-solving. You'll learn to click on squares to change their symbols. Remember, every symbol represents a number from 0-9, and we use space-themed symbols instead of colors to make it easier for everyone to see the differences clearly.",
+  "category": "🎓 Tutorial",
+  "difficulty": "Tutorial",
+  "gridSize": 2,
+  "timeLimit": null,
+  "basePoints": 150,
+  "requiredRankLevel": 1,
+  "emojiSet": "status_alerts",
+  "examples": [
+    {
+      "input": [
+        [0, 0],
+        [0, 0]
+      ],
+      "output": [
+        [1, 0],
+        [0, 0]
+      ]
+    }
+  ],
+  "testInput": [
+    [0, 0],
+    [0, 0]
+  ],
+  "testOutput": [
+    [1, 0],
+    [0, 0]
+  ],
+  "hints": [
+    "Look at the example above. The input has all black squares ⬛ (which means all 0s). The output has one green checkmark ✅ in the top-left corner (which means changing that 0 to a 1).",
+    "Click on the top-left square of your grid. Each click cycles through the symbols. Click once to change the black square ⬛ to a green checkmark ✅.",
+    "Perfect! Now you understand the basic interaction. This skill - changing individual squares - is how you'll solve every puzzle in the game."
+  ]
+}

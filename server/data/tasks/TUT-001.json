@@ -1,0 +1,37 @@
+{
+  "id": "TUT-001",
+  "title": "Understanding Your Grid",
+  "description": "Before we start any missions, let's understand what you're looking at. Every grid is made up of squares. Each square is filled with a symbol - there are no empty spaces! The black square ⬛ represents the number 0, and it's not 'empty' - it's just as important as any other symbol. Think of it like a chessboard where every square has something on it, even if it looks blank.",
+  "category": "🎓 Tutorial",
+  "difficulty": "Tutorial",
+  "gridSize": 2,
+  "timeLimit": null,
+  "basePoints": 100,
+  "requiredRankLevel": 1,
+  "emojiSet": "status_alerts",
+  "examples": [
+    {
+      "input": [
+        [0, 1],
+        [0, 0]
+      ],
+      "output": [
+        [0, 1],
+        [0, 0]
+      ]
+    }
+  ],
+  "testInput": [
+    [0, 1],
+    [0, 0]
+  ],
+  "testOutput": [
+    [0, 1],
+    [0, 0]
+  ],
+  "hints": [
+    "This is your first look at a grid! See how the black square ⬛ (which represents 0) and the green checkmark ✅ (which represents 1) work together? Every square has a value from 0 to 9.",
+    "For this tutorial, just click on any square to see how the symbols change. You can cycle through all 10 different symbols by clicking repeatedly.",
+    "The goal is simple: make your grid match the example. Since this one is already correct, you just need to click the green Submit button!"
+  ]
+}
